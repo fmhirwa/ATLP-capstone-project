@@ -2,3 +2,57 @@
     background-color: rgb(229, 229, 229);
     font-family: monospace;
 };
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+    /*background-color: var(--complementary-color);
+    box-shadow: 0 2px 1 var(--main-color);*/
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    font-family: var(--header-font);
+    font-weight: bold;
+    box-shadow: 0 3px 0 rgba(54, 91, 109, 0.4);
+    background: #C4C4C4;
+    opacity: 0.25;
+    backdrop-filter: blur(100px);
+
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        justify-content: center;
+    }
+}	
+
+@media (max-width: 475px) {
+#navbar {
+  font-size: 1rem;
+
+}
+}
+
+#navbar p {
+    position: fixed;
+    margin: auto 1vw auto 1vw;
+    left: 0px;
+    top: 1%;
+    height: 8%;
+    width: auto;
+    border: solid 0.1rem #365b6d;
+}
+
+#navbar ul {
+    margin: auto 2vw auto 2vw;
+}
+
+#navbar li {
+    list-style-type: none;
+    display: inline;
+    /*padding: auto 2vw auto 2vw;*/
+}
+
+#navbar {}
